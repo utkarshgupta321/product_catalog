@@ -7,7 +7,7 @@ This is a Spring Boot microservice that allows you to manage product data (CRUD)
 ## Features
 
 - Add, retrieve, update, and delete products
-- Publishes product-related events (mocked)
+- Publishes product-related events
 - RESTful API with Postman collection
 - Unit tests with JUnit
 
@@ -23,7 +23,7 @@ This is a Spring Boot microservice that allows you to manage product data (CRUD)
 - JUnit
 - Postman
 - Pub/Sub
-- IDE: Eclipse (recommended)
+- IDE: Eclipse
 
 ---
 
@@ -32,9 +32,9 @@ This is a Spring Boot microservice that allows you to manage product data (CRUD)
 - Java 21+
 - Maven 3.8+
 - PostgreSQL
-- Eclipse IDE or IntelliJ
-- Postman (optional but recommended)
-- pgAdmin (for PostgreSQL GUI)
+- Eclipse IDE 
+- Postman (for API calls)
+- pgAdmin (for PostgreSQL)
 
 ---
 
