@@ -1,0 +1,100 @@
+{
+  "info": {
+    "name": "Product Catalog",
+    "_postman_id": "f3c0f013-01e7-4a2f-a905-c31e170e3c63",
+    "description": "Postman collection for Product Catalog microservice",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Add Product",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Gaming Mouse\",\n  \"description\": \"High DPI wireless mouse\",\n  \"category\": \"Electronics\",\n  \"price\": 59.99,\n  \"availableStock\": 150\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "products"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get All Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "products"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Product",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Updated Gaming Mouse\",\n  \"description\": \"Updated description\",\n  \"category\": \"Accessories\",\n  \"price\": 69.99,\n  \"availableStock\": 120\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/products/{{productId}}",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "products",
+            "{{productId}}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Product by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/products/{{productId}}",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "products",
+            "{{productId}}"
+          ]
+        }
+      }
+    }
+  ]
+}
